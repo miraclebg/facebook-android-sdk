@@ -225,8 +225,6 @@ public final class FacebookSdk {
      * start. Automatic event logging from 'activateApp' can be controlled via the
      * 'com.facebook.sdk.AutoLogAppEventsEnabled' manifest setting.
      */
-    @Deprecated
-    @SuppressWarnings("deprecation")
     public static synchronized void sdkInitialize(Context applicationContext) {
         FacebookSdk.sdkInitialize(applicationContext, null);
     }
@@ -247,7 +245,6 @@ public final class FacebookSdk {
      * start. Automatic event logging from 'activateApp' can be controlled via the
      * 'com.facebook.sdk.AutoLogAppEventsEnabled' manifest setting.
      */
-    @Deprecated
     public static synchronized void sdkInitialize(
             final Context applicationContext,
             final InitializeCallback callback) {
